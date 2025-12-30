@@ -1,0 +1,63 @@
+
+how to push in to github https://github.com/chanchhanun/Portfolio.git
+To push your local project to the GitHub repository at
+https://github.com/chanchhanun/Portfolio.git
+1. Initialize a local Git repository in your project directory:
+   ```
+   git init
+   ```
+2. Add your files to the staging area:
+   ```
+    git add .
+    ```
+3. Commit your changes with a descriptive message:
+    ```
+    git commit -m "Initial commit"
+    ```
+4. Add the remote repository URL:
+    ```
+    git remote add origin https://github.com/chanchhanun/Portfolio.git
+    ```
+5. Push your changes to the remote repository:
+    ```
+    git push -u origin main
+    ```
+To push your local project to the GitHub repository at
+https://github.com/chanchhanun/Portfolio.git
+PS D:\Portfolio> git push -u origin main
+error: src refspec main does not match any
+error: failed to push some refs to 'https://github.com/chanchhanun/Portfolio.git'
+This error typically occurs when the branch you are trying to push does not exist locally. By default, Git creates a branch named "master" when you initialize a new repository. If you want to push to the "main" branch, you need to either create it or rename your current branch.
+To resolve this issue, you can follow these steps:
+1. Check your current branch name:
+   ```
+   git branch
+   ```
+   If it shows "master", you can either rename it to "main" or push to "master".
+2. To rename the branch to "main":
+   ```
+    git branch -m main
+    ```
+3. Now, push to the "main" branch:
+    ```
+     git push -u origin main
+     ```
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/chanchhanun/Portfolio.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+This error occurs because the remote repository has changes that are not present in your local repository. To resolve this, you need to pull the changes from the remote repository before pushing your local changes.
+To fix this issue, follow these steps:
+1. Pull the changes from the remote repository:
+   ```
+   git pull origin main --allow-unrelated-histories
+   ```
+   The `--allow-unrelated-histories` flag is used here because the local and remote repositories have unrelated histories.
+2. Resolve any merge conflicts if they arise.
+3. After successfully pulling the changes, push your local changes to the remote repository:
+   ```
+   git push -u origin main
+   ```
