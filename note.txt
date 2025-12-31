@@ -1,0 +1,16 @@
+PS D:\Rean Git> git clone "https://github.com/chanchhanun/Portfolio.git"
+Cloning into 'Portfolio'...
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (12/12), done.
+remote: Total 15 (delta 2), reused 9 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (15/15), 4.92 KiB | 4.92 MiB/s, done.
+Resolving deltas: 100% (2/2), done.
+
+PS D:\Rean Git> cd .\Portfolio\
+PS D:\Rean Git\Portfolio> git remote set-url origin "https://github.com/chanchhanun/Portfolio.git"
+PS D:\Rean Git\Portfolio> git remote -v // what this mean? -> list of remote repositories
+origin  https://github.com/chanchhanun/Portfolio.git (fetch)
+origin  https://github.com/chanchhanun/Portfolio.git (push)
+PS D:\Rean Git\Portfolio> git branch -M main  // rename branch to main
+PS D:\Rean Git\Portfolio> git add .
