@@ -5,11 +5,11 @@ function Hero() {
       className="min-h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-r from-black to-gray-800 text-white"
     >
       <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
-        Hi, I'm Your Name 👋
+        Hi, I'm Chanchhanun
       </h1>
 
       <p className="text-sm sm:text-base md:text-lg text-gray-300 mb-6 max-w-xl">
-        Student | React Developer | Tech Enthusiast
+        College Student | Mobile Developer
       </p>
 
       <a
