@@ -18,6 +18,12 @@ function Projects() {
         "Fully functional Kotlin-based mobile e-commerce application with product listings, cart functionality, and checkout process.",
       link: "https://github.com/chanchhanun/",
     },
+    {
+      title: "Library Management System(Flutter)",
+      description:
+        "A Flutter-based application for managing library operations including book listings, borrowing, and returning.",
+      link: "https://github.com/chanchhanun/",
+    },
   ];
 
   return (
@@ -27,11 +33,10 @@ function Projects() {
     >
       <div className="max-w-7xl mx-auto text-center">
         {/* Header */}
-        <h2 className="text-4xl font-bold mb-4">
-          My Projects
-        </h2>
+        <h2 className="text-4xl font-bold mb-4">My Projects</h2>
         <p className="text-gray-300 mb-12 text-lg">
-          A few projects I’ve built to showcase my skills and experience in mobile and web development.
+          A few projects I’ve built to showcase my skills and experience in
+          mobile and web development.
         </p>
 
         {/* Project Grid */}
